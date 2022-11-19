@@ -1,0 +1,128 @@
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: flex-end;
+}
+
+.imagem-2 {
+  align-self: flex-end;
+}
+.imagem-3 {
+  justify-self: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.informacoes p + p {
+  margin-top: 30px;
+}
+
+.titulo {
+  color: #b07dfb;
+}
+.titulo h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.titulo span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  display: grid;
+  border-radius: 4px 4px 6px 6px;
+}
+
+.caracteristicas span {
+  color: #b07dfb;
+  display: block;
+}
+.numero {
+  font-size: 3rem;
+  margin: 10px auto;
+  line-height: 1;
+  border-radius: 0 0 5px 5px;
+}
+
+.rotulo {
+  background-color: white;
+  color: #b07dfb;
+  padding: 5px 0px;
+  border-radius: 0 0 5px 5px;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: #b07dfb;
+  max-width: 16rem;
+}
+
+.citacao,
+.atributos {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.15);
+  align-self: flex-start;
+}
+
+.citacao p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+.atributos li {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 1.125rem;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}
